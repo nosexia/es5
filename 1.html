@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新方法filter</title>
+</head>
+<body>
+
+    
+</body>
+<script type="text/javascript">
+    var array = [1, 2, undefined];
+    function fn1(item){
+        return item
+    }
+    var array1 = array.filter(fn1);
+    console.log(array1);
+</script>
+
+
+//filter方法，第一个参数array,必须是一个数组
+//fn1必须是一个函数，否则报错，函数有三个参数
+1.item          2.nIndex           3.array1;
+
+参考文档：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+</html>
