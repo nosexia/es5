@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es5，函数原型新增方法bind</title>
+</head>
+<body>
+    <p>
+        Function.prototype.bind创建一个新的函数，函数体和目标函数是同一个函数
+        bind中第一个参数，做为创建函数的this指向
+    </p>
+</body>
+<script type="text/javascript">
+    function testThis(){
+        console.log( this );
+    }
+    var person1 = {name: 'nose'};
+    testThis.bind( person1 )();
+
+
+</script>
+</html>
