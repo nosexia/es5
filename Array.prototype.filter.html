@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es5的filter</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var array1 = [1, 2, 3];
+    // 筛选出来符合条件的数组项,如果没有一项符合条件，返回空数组
+    var filterArray = array1.filter(function(item){
+        if(item > 2){
+            return true;
+        }
+    });
+    console.log(filterArray);
+</script>
+</html>
