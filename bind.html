@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现bind方法原理(familyBind)</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var obj = {'name' : 'nose'};
+    Function.prototype.familyBind = function(params){
+        var fn = this;
+        return function(){
+            fn.apply(params, arguments);
+        };
+    };
+    function fn(params){
+        console.log(this.name);
+        console.log(params);
+    }
+    // familyBind封装一个函数，让函数里面的this都指向obj
+    fn.familyBind(obj)(23);
+
+
+</script>
+</html>
