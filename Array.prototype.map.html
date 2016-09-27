@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es5的高级方法map</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var array1 = [1, 2, 3];
+    // 把数组放到函数中，做映射关系，当item>2映射到"恭喜你，通过了",  否则映射到"下次努力";
+    var mapArray = array1.map(function(item){
+        if(item > 2){
+            return '恭喜你，通过了';
+        }else{
+            return '下次努力';
+        }
+    });
+    // ["下次努力", "下次努力", "恭喜你，通过了"]
+    console.log(mapArray);
+</script>
+</html>
